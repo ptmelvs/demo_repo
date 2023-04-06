@@ -20,3 +20,14 @@ min_value = min(rates.values())
 for key in rates.keys():
     if rates[key] == min_value:
         print(f'{key} -> {min_value}')
+
+# Task 3
+
+dates = ['2017-03-01', '2017-03-02', '2023-04-23']
+rates = [55.7, 55.2, 87.9]
+new_dict = {}
+while dates and rates:
+    new_dict[dates[0]] = rates[0]
+    dates.pop(0)
+    rates.pop(0)
+print(new_dict)

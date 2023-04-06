@@ -14,3 +14,9 @@ print(words_popularity)
 print(chars_popularity)
 
 # Task 2
+
+rates = {'Sberbank': 55.8, 'VTB24': 53.91, 'Tinkoff': 56.4, 'Alfa': 53.8}
+min_value = min(rates.values())
+for key in rates.keys():
+    if rates[key] == min_value:
+        print(f'{key} -> {min_value}')

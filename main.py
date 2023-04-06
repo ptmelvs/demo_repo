@@ -20,7 +20,7 @@ min_value = min(rates.values())
 for key in rates.keys():
     if rates[key] == min_value:
         print(f'{key} -> {min_value}\n')
-
+        break
 # Task 3
 
 dates = ['2017-03-01', '2017-03-02', '2023-04-23', '2018-30-01']
